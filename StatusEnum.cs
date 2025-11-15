@@ -2,5 +2,7 @@
 
 public enum StatusEnum
 {
-    
+    OwnedAvailable,
+    OwnedLoanedOut,
+    Borrowed
 }

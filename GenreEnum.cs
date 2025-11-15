@@ -2,5 +2,10 @@
 
 public enum GenreEnum
 {
-    
+    Action,
+    Horror,
+    RPG,
+    Adventure,
+    Strategy,
+    Sports
 }

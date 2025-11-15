@@ -1,6 +1,6 @@
 ﻿namespace ITCS_3112_Final_Project;
 
-class Program
+class Program 
 {
     static void Main(string[] args)
     {

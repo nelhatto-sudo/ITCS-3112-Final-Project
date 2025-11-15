@@ -1,6 +1,21 @@
-﻿namespace ITCS_3112_Final_Project;
+﻿using System.Security.AccessControl;
 
-public class PhysicalGame
+namespace ITCS_3112_Final_Project;
+
+public class PhysicalGame : Game
 {
-    
+    public string Location { get; private set; }
+
+    internal PhysicalGame(int gameId, int displayId, string location)
+        : base(gameId, displayId)
+    {
+        Location = location;
+    }
+
+    public void ChangeLocation(string newLocation) => Location = newLocation;
+
+    public override void GetStorageDetails()
+    {
+        Console.WriteLine($"[Physical] GameId={GameId}, Location={Location}");
+    }
 }
