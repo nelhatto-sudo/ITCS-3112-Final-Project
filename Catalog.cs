@@ -19,4 +19,9 @@ public class Catalog : ICatalog
     {
         return _allGames.TryGetValue(displayId, out var d) ? d : null;
     }
+    
+    public IReadOnlyList<GameDisplay> GetAll()
+    {
+        return _allGames.Values.OrderBy(g => g.DisplayId).ToList();
+    }
 }

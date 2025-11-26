@@ -1,9 +1,29 @@
-﻿namespace ITCS_3112_Final_Project;
+﻿using ITCS_3112_Final_Project;
 
-class Program 
+namespace ITCS_3112_Final_Project
 {
-    static void Main(string[] args)
+    internal class Program
     {
-        Console.WriteLine("Hello, World!");
+        static void Main(string[] args)
+        {
+            ILogger logger = ConsoleLogger.GetInstance(); 
+            
+            // interfaces 
+            ICatalog catalog = new Catalog();
+            IGameRepository gameRepository = new InMemoryGameRepository();
+            IUserRepository userRepository = new InMemoryUserRepository();
+
+            // Service layer 
+            GameLibraryService gameLibraryService = new GameLibraryService(
+                catalog,
+                gameRepository,
+                userRepository,
+                logger);
+
+            // UI layer (console menu)
+            IMenuActions menu = new MenuActions(gameLibraryService, logger);
+            
+            menu.Run();
+        }
     }
 }

@@ -10,7 +10,7 @@ public class GameFactory
         return new PhysicalGame(id, displayId, location);
     }
 
-    public static DigitalGame CreateDigitalGame(int displayId, string gameStore)
+    public static DigitalGame CreateDigitalGame(int displayId, GameStoreEnum gameStore)
     {
         var id = _nextGameId++;
         return new DigitalGame(id, displayId, gameStore);

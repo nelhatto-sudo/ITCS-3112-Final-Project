@@ -2,9 +2,9 @@
 
 public class DigitalGame : Game
 {
-    public string GameStore { get; }
+    public GameStoreEnum GameStore { get; }
 
-    internal DigitalGame(int gameId, int displayId, string gameStore)
+    internal DigitalGame(int gameId, int displayId, GameStoreEnum gameStore)
         : base(gameId, displayId)
     {
         GameStore = gameStore;

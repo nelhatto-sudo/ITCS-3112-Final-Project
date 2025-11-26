@@ -25,4 +25,9 @@ public class User
     {
         return _ratings.TryGetValue(displayId, out rating);
     }
+    
+    public IReadOnlyDictionary<int, int> GetAllRatings()
+    {
+        return _ratings;
+    }
 }
