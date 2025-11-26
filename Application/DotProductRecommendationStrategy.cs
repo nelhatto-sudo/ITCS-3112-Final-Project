@@ -4,13 +4,13 @@ using System.Linq;
 
 namespace ITCS_3112_Final_Project;
 
-public class DotProductStrategy : IRecommendationStrategy
+public class DotProductRecommendationStrategy : IRecommendationStrategy
 {
     private readonly ICatalog _catalog; 
     private readonly IUserRepository _userRepository;
     private readonly ILogger _logger;
 
-    public DotProductStrategy(ICatalog catalog, IGameRepository gameRepository, IUserRepository userRepository, ILogger logger)
+    public DotProductRecommendationStrategy(ICatalog catalog, IGameRepository gameRepository, IUserRepository userRepository, ILogger logger)
     {
         _catalog = catalog;
         _userRepository = userRepository;
@@ -66,7 +66,7 @@ public class DotProductStrategy : IRecommendationStrategy
             return new List<GameDisplay>();
         }
 
-        _logger.Info($"Best dot product match for user {userId} is user {bestMatchUser.UserId} with dot={bestDot}.");
+        _logger.Info($"Your taste is similar to {bestMatchUser.UserName}.");
 
         // 2. Recommend games that the best-matching user rated, but target user has not.
         var targetRatedIds = new HashSet<int>(targetRatings.Keys);
@@ -79,7 +79,7 @@ public class DotProductStrategy : IRecommendationStrategy
             var displayId = kvp.Key;
             var rating = kvp.Value;
 
-            if (rating < 7)
+            if (rating < 3)
                 continue;
 
             // Target user should not already have rated this

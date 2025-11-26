@@ -146,7 +146,6 @@ public class MenuActions : IMenuActions
             "1" => StatusEnum.OwnedAvailable,
             "2" => StatusEnum.OwnedLoanedOut,
             "3" => StatusEnum.Borrowed,
-            "4" => null,
             _   => null
         };
 
@@ -157,10 +156,10 @@ public class MenuActions : IMenuActions
             return;
         }
 
-        Console.WriteLine("Name | Status | Genre | Rating");
+        Console.WriteLine("Game Id | Name | Status | Genre | Rating");
         foreach (var g in games)
         {
-            Console.WriteLine($"{g.Title} | {g.Status} | {g.Genre} | {g.Rating:F1}");
+            Console.WriteLine($"{g.GameId} |{g.Title} | {g.Status} | {g.Genre} | {g.Rating:F1}");
         }
     }
 
@@ -263,7 +262,7 @@ public class MenuActions : IMenuActions
 
         Console.WriteLine("Name | Genre | Rating");
         foreach (var g in games)
-            Console.WriteLine($"{g.Title} | {g.Genre} | {g.Rating:F1}");
+            Console.WriteLine($"{g.DisplayId} | {g.Title} | {g.Genre} | {g.Rating:F1}");
     }
 
     // ==================== MY LIBRARY ACTIONS ====================
@@ -410,7 +409,7 @@ public class MenuActions : IMenuActions
             return;
         }
 
-        Console.Write("Enter rating (1–10): ");
+        Console.Write("Enter rating (1–5): ");
         if (!int.TryParse(Console.ReadLine(), out var rating))
         {
             Console.WriteLine("Invalid rating.");
@@ -440,9 +439,9 @@ public class MenuActions : IMenuActions
             return;
         }
 
-        Console.WriteLine("Base recommendations:");
+        Console.WriteLine("Top Recommended Games You Don’t Own: ");
         foreach (var g in recs)
-            Console.WriteLine($"{g.Title} | {g.Genre} | {g.Rating:F1}");
+            Console.WriteLine($"{g.DisplayId} | {g.Title} | {g.Genre} | {g.Rating:F1}");
     }
 
     private void DotProductRecommendation()
@@ -460,9 +459,9 @@ public class MenuActions : IMenuActions
             return;
         }
 
-        Console.WriteLine("Dot product recommendations:");
+        Console.WriteLine("Top Recommended Games You Don’t Own: ");
         foreach (var g in recs)
-            Console.WriteLine($"{g.Title} | {g.Genre} | {g.Rating:F1}");
+            Console.WriteLine($"{g.DisplayId}| {g.Title} | {g.Genre} | {g.Rating:F1}");
     }
 
     // ==================== UTILITY ====================

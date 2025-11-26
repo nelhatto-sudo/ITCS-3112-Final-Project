@@ -27,58 +27,129 @@ LIBRARY | Nour   | 3  | P | LivingRoom Shelf | Borrowed       | 3
 LIBRARY | Nour   | 7  | D | Steam            | OwnedAvailable | 4
 LIBRARY | Nour   | 12 | D | Steam            | OwnedLoanedOut | 5
 LIBRARY | Nour   | 19 | P | Desk Drawer      | OwnedAvailable | 4
+LIBRARY | Nour   | 8  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Nour   | 11 | D | EpicGames        | OwnedAvailable | 4
+LIBRARY | Nour   | 14 | P | Bedroom Cabinet  | OwnedAvailable | 3
+LIBRARY | Nour   | 21 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Nour   | 24 | P | Closet Box       | OwnedLoanedOut | 2
 
 LIBRARY | Alex   | 2  | D | Xbox             | OwnedAvailable | 5
 LIBRARY | Alex   | 4  | D | Xbox             | OwnedLoanedOut | 4
 LIBRARY | Alex   | 11 | D | Steam            | OwnedAvailable | 5
 LIBRARY | Alex   | 23 | D | Origin           | OwnedAvailable | 4
+LIBRARY | Alex   | 1  | D | Steam            | Borrowed       | 3
+LIBRARY | Alex   | 6  | D | EpicGames        | OwnedAvailable | 4
+LIBRARY | Alex   | 9  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Alex   | 14 | P | LivingRoom Shelf | OwnedAvailable | 3
+LIBRARY | Alex   | 17 | P | Bedroom Cabinet  | OwnedAvailable | 5
+LIBRARY | Alex   | 22 | D | Origin           | OwnedLoanedOut | 2
 
 LIBRARY | Sam    | 5  | P | Bedroom Cabinet  | OwnedAvailable | 4
 LIBRARY | Sam    | 10 | D | Playstation      | OwnedAvailable | 5
 LIBRARY | Sam    | 14 | P | LivingRoom Shelf | Borrowed       | 3
 LIBRARY | Sam    | 18 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Sam    | 2  | D | Xbox             | OwnedAvailable | 4
+LIBRARY | Sam    | 7  | D | EpicGames        | OwnedLoanedOut | 3
+LIBRARY | Sam    | 13 | D | Steam            | OwnedAvailable | 4
+LIBRARY | Sam    | 19 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Sam    | 21 | P | Office Shelf     | Borrowed       | 2
+LIBRARY | Sam    | 24 | P | Desk Drawer      | OwnedAvailable | 5
 
 LIBRARY | Jordan | 3  | D | Steam            | OwnedAvailable | 5
 LIBRARY | Jordan | 6  | D | Steam            | OwnedAvailable | 4
 LIBRARY | Jordan | 12 | D | EpicGames        | OwnedAvailable | 4
 LIBRARY | Jordan | 20 | P | Closet Box       | OwnedLoanedOut | 2
+LIBRARY | Jordan | 1  | D | Playstation      | OwnedAvailable | 5
+LIBRARY | Jordan | 4  | D | Xbox             | Borrowed       | 3
+LIBRARY | Jordan | 9  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Jordan | 15 | D | Steam            | OwnedAvailable | 4
+LIBRARY | Jordan | 18 | D | Xbox             | OwnedAvailable | 4
+LIBRARY | Jordan | 23 | D | Origin           | OwnedLoanedOut | 2
 
 LIBRARY | Taylor | 1  | P | Bedroom Cabinet  | Borrowed       | 4
 LIBRARY | Taylor | 8  | D | Steam            | OwnedAvailable | 5
 LIBRARY | Taylor | 15 | D | Steam            | OwnedAvailable | 5
 LIBRARY | Taylor | 21 | D | EpicGames        | OwnedAvailable | 4
+LIBRARY | Taylor | 4  | D | Playstation      | OwnedAvailable | 3
+LIBRARY | Taylor | 6  | D | Steam            | OwnedLoanedOut | 4
+LIBRARY | Taylor | 10 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Taylor | 17 | P | LivingRoom Shelf | OwnedAvailable | 4
+LIBRARY | Taylor | 19 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Taylor | 24 | P | Office Shelf     | Borrowed       | 2
 
 LIBRARY | Casey  | 7  | D | Steam            | OwnedAvailable | 5
 LIBRARY | Casey  | 9  | D | Steam            | OwnedLoanedOut | 4
 LIBRARY | Casey  | 13 | P | Office Shelf     | OwnedAvailable | 5
 LIBRARY | Casey  | 24 | P | LivingRoom Shelf | OwnedAvailable | 3
+LIBRARY | Casey  | 2  | D | EpicGames        | OwnedAvailable | 4
+LIBRARY | Casey  | 5  | P | Bedroom Cabinet  | Borrowed       | 3
+LIBRARY | Casey  | 11 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Casey  | 16 | D | Xbox             | OwnedAvailable | 4
+LIBRARY | Casey  | 18 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Casey  | 22 | D | Origin           | OwnedLoanedOut | 2
 
 LIBRARY | Riley  | 2  | D | Playstation      | OwnedAvailable | 4
 LIBRARY | Riley  | 5  | P | Friend's House   | OwnedLoanedOut | 3
 LIBRARY | Riley  | 16 | D | Xbox             | OwnedAvailable | 4
 LIBRARY | Riley  | 19 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Riley  | 1  | D | Steam            | Borrowed       | 3
+LIBRARY | Riley  | 3  | D | EpicGames        | OwnedAvailable | 4
+LIBRARY | Riley  | 8  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Riley  | 10 | D | Steam            | OwnedAvailable | 4
+LIBRARY | Riley  | 14 | P | LivingRoom Shelf | OwnedAvailable | 3
+LIBRARY | Riley  | 23 | D | Origin           | OwnedAvailable | 4
 
 LIBRARY | Morgan | 4  | D | Playstation      | OwnedAvailable | 3
 LIBRARY | Morgan | 6  | D | Steam            | OwnedAvailable | 4
 LIBRARY | Morgan | 11 | D | Steam            | Borrowed       | 3
 LIBRARY | Morgan | 22 | D | Origin           | OwnedAvailable | 5
+LIBRARY | Morgan | 7  | D | Steam            | OwnedAvailable | 4
+LIBRARY | Morgan | 9  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Morgan | 13 | D | EpicGames        | OwnedAvailable | 4
+LIBRARY | Morgan | 15 | D | Steam            | OwnedLoanedOut | 3
+LIBRARY | Morgan | 18 | D | Xbox             | OwnedAvailable | 4
+LIBRARY | Morgan | 24 | P | Closet Box       | Borrowed       | 2
 
 LIBRARY | Jamie  | 9  | D | Steam            | OwnedAvailable | 5
 LIBRARY | Jamie  | 13 | D | Steam            | OwnedAvailable | 4
 LIBRARY | Jamie  | 17 | P | Bedroom Cabinet  | OwnedAvailable | 5
 LIBRARY | Jamie  | 20 | D | Steam            | OwnedAvailable | 4
+LIBRARY | Jamie  | 2  | D | Xbox             | OwnedAvailable | 4
+LIBRARY | Jamie  | 6  | D | Steam            | Borrowed       | 3
+LIBRARY | Jamie  | 10 | D | Playstation      | OwnedAvailable | 5
+LIBRARY | Jamie  | 14 | P | LivingRoom Shelf | OwnedAvailable | 4
+LIBRARY | Jamie  | 18 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Jamie  | 21 | D | EpicGames        | OwnedLoanedOut | 3
 
 LIBRARY | Chris  | 1  | D | Steam            | OwnedAvailable | 4
 LIBRARY | Chris  | 10 | D | Steam            | OwnedAvailable | 5
 LIBRARY | Chris  | 18 | D | Xbox             | OwnedLoanedOut | 3
 LIBRARY | Chris  | 23 | D | Origin           | OwnedAvailable | 4
+LIBRARY | Chris  | 3  | P | Bedroom Cabinet  | Borrowed       | 3
+LIBRARY | Chris  | 6  | D | Steam            | OwnedAvailable | 4
+LIBRARY | Chris  | 8  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Chris  | 11 | D | EpicGames        | OwnedLoanedOut | 2
+LIBRARY | Chris  | 15 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Chris  | 24 | P | Desk Drawer      | OwnedAvailable | 4
 
 LIBRARY | Avery  | 3  | D | EpicGames        | OwnedAvailable | 4
 LIBRARY | Avery  | 8  | D | Steam            | OwnedAvailable | 5
 LIBRARY | Avery  | 12 | D | Steam            | OwnedAvailable | 4
 LIBRARY | Avery  | 21 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Avery  | 1  | D | Playstation      | Borrowed       | 3
+LIBRARY | Avery  | 5  | P | LivingRoom Shelf | OwnedAvailable | 4
+LIBRARY | Avery  | 9  | D | Steam            | OwnedLoanedOut | 4
+LIBRARY | Avery  | 10 | D | Xbox             | OwnedAvailable | 5
+LIBRARY | Avery  | 14 | P | Bedroom Cabinet  | OwnedAvailable | 3
+LIBRARY | Avery  | 22 | D | Origin           | OwnedAvailable | 4
 
 LIBRARY | Dana   | 5  | P | LivingRoom Shelf | OwnedAvailable | 4
 LIBRARY | Dana   | 14 | P | LivingRoom Shelf | OwnedAvailable | 5
 LIBRARY | Dana   | 19 | D | Steam            | OwnedAvailable | 5
 LIBRARY | Dana   | 24 | P | Bedroom Cabinet  | OwnedLoanedOut | 2
+LIBRARY | Dana   | 2  | D | Xbox             | OwnedAvailable | 4
+LIBRARY | Dana   | 6  | D | Steam            | OwnedAvailable | 4
+LIBRARY | Dana   | 11 | D | EpicGames        | Borrowed       | 3
+LIBRARY | Dana   | 13 | P | Office Shelf     | OwnedAvailable | 5
+LIBRARY | Dana   | 16 | D | Playstation      | OwnedAvailable | 4
+LIBRARY | Dana   | 20 | P | Closet Box       | OwnedAvailable | 3

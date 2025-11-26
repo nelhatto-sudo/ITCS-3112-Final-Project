@@ -109,13 +109,16 @@ namespace ITCS_3112_Final_Project
                 if (!byDisplayId.TryGetValue(displayId, out var cd))
                     continue;
 
+                int userRating;
+                _userRepository.GetById(userId).TryGetRating(gd.Game.DisplayId, out userRating);
+                
                 var view = new UserGameView(
                     GameId: gd.Game.GameId,
                     DisplayId: cd.DisplayId,
                     Title: cd.Title,
                     Status: gd.Status,
                     Genre: cd.Genre,
-                    Rating: cd.Rating // already the global average you maintain
+                    Rating: userRating  
                 );
 
                 result.Add(view);
@@ -127,7 +130,7 @@ namespace ITCS_3112_Final_Project
         // ==================== RATINGS ====================
         public bool RateGameInLibrary(int userId, int gameId, int rating)
         {
-            if (rating < 1 || rating > 10)
+            if (rating < 1 || rating > 5)
             {
                 _logger.Warn("Rating must be between 1 and 10.");
                 return false;
@@ -169,7 +172,7 @@ namespace ITCS_3112_Final_Project
         public List<GameDisplay> GetBaseRecommendations(int userId)
         {
             IRecommendationStrategy strategy =
-                new BaseStrategy(_catalog, _gameRepository, _userRepository, _logger);
+                new PopularityRecommendationStrategy(_catalog, _gameRepository, _userRepository, _logger);
 
             return strategy.RecommendGames(userId);
         }
@@ -177,7 +180,7 @@ namespace ITCS_3112_Final_Project
         public List<GameDisplay> GetDotProductRecommendations(int userId)
         {
             IRecommendationStrategy strategy =
-                new DotProductStrategy(_catalog, _gameRepository, _userRepository, _logger);
+                new DotProductRecommendationStrategy(_catalog, _gameRepository, _userRepository, _logger);
 
             return strategy.RecommendGames(userId);
         }
