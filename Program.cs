@@ -19,6 +19,13 @@ namespace ITCS_3112_Final_Project
                 gameRepository,
                 userRepository,
                 logger);
+            
+            // Seed
+            var seeder = new TextFileDataSeeder("C:\\Users\\Nour Eldeen Elhatto\\RiderProjects\\ITCS 3112 Final Project\\Data\\games.txt", 
+                                     "C:\\Users\\Nour Eldeen Elhatto\\RiderProjects\\ITCS 3112 Final Project\\Data\\users.txt",
+                                                logger);
+            seeder.Seed(catalog, userRepository, gameRepository);
+            
 
             // UI layer (console menu)
             IMenuActions menu = new MenuActions(gameLibraryService, logger);

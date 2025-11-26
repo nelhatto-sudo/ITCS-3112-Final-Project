@@ -1,0 +1,84 @@
+﻿# users.txt
+# Two record types:
+#   USER    | UserName
+#   LIBRARY | UserName | DisplayId | GameType | StoreOrLocation | Status | Rating
+#
+# GameType: D = Digital, P = Physical
+# Status:   OwnedAvailable, OwnedLoanedOut, Borrowed
+# Rating:   integer 1–5
+
+# ===== Users =====
+USER | Nour
+USER | Alex
+USER | Sam
+USER | Jordan
+USER | Taylor
+USER | Casey
+USER | Riley
+USER | Morgan
+USER | Jamie
+USER | Chris
+USER | Avery
+USER | Dana
+
+# ===== Library entries =====
+LIBRARY | Nour   | 1  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Nour   | 3  | P | LivingRoom Shelf | Borrowed       | 3
+LIBRARY | Nour   | 7  | D | Steam            | OwnedAvailable | 4
+LIBRARY | Nour   | 12 | D | Steam            | OwnedLoanedOut | 5
+LIBRARY | Nour   | 19 | P | Desk Drawer      | OwnedAvailable | 4
+
+LIBRARY | Alex   | 2  | D | Xbox             | OwnedAvailable | 5
+LIBRARY | Alex   | 4  | D | Xbox             | OwnedLoanedOut | 4
+LIBRARY | Alex   | 11 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Alex   | 23 | D | Origin           | OwnedAvailable | 4
+
+LIBRARY | Sam    | 5  | P | Bedroom Cabinet  | OwnedAvailable | 4
+LIBRARY | Sam    | 10 | D | Playstation      | OwnedAvailable | 5
+LIBRARY | Sam    | 14 | P | LivingRoom Shelf | Borrowed       | 3
+LIBRARY | Sam    | 18 | D | Steam            | OwnedAvailable | 5
+
+LIBRARY | Jordan | 3  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Jordan | 6  | D | Steam            | OwnedAvailable | 4
+LIBRARY | Jordan | 12 | D | EpicGames        | OwnedAvailable | 4
+LIBRARY | Jordan | 20 | P | Closet Box       | OwnedLoanedOut | 2
+
+LIBRARY | Taylor | 1  | P | Bedroom Cabinet  | Borrowed       | 4
+LIBRARY | Taylor | 8  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Taylor | 15 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Taylor | 21 | D | EpicGames        | OwnedAvailable | 4
+
+LIBRARY | Casey  | 7  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Casey  | 9  | D | Steam            | OwnedLoanedOut | 4
+LIBRARY | Casey  | 13 | P | Office Shelf     | OwnedAvailable | 5
+LIBRARY | Casey  | 24 | P | LivingRoom Shelf | OwnedAvailable | 3
+
+LIBRARY | Riley  | 2  | D | Playstation      | OwnedAvailable | 4
+LIBRARY | Riley  | 5  | P | Friend's House   | OwnedLoanedOut | 3
+LIBRARY | Riley  | 16 | D | Xbox             | OwnedAvailable | 4
+LIBRARY | Riley  | 19 | D | Steam            | OwnedAvailable | 5
+
+LIBRARY | Morgan | 4  | D | Playstation      | OwnedAvailable | 3
+LIBRARY | Morgan | 6  | D | Steam            | OwnedAvailable | 4
+LIBRARY | Morgan | 11 | D | Steam            | Borrowed       | 3
+LIBRARY | Morgan | 22 | D | Origin           | OwnedAvailable | 5
+
+LIBRARY | Jamie  | 9  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Jamie  | 13 | D | Steam            | OwnedAvailable | 4
+LIBRARY | Jamie  | 17 | P | Bedroom Cabinet  | OwnedAvailable | 5
+LIBRARY | Jamie  | 20 | D | Steam            | OwnedAvailable | 4
+
+LIBRARY | Chris  | 1  | D | Steam            | OwnedAvailable | 4
+LIBRARY | Chris  | 10 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Chris  | 18 | D | Xbox             | OwnedLoanedOut | 3
+LIBRARY | Chris  | 23 | D | Origin           | OwnedAvailable | 4
+
+LIBRARY | Avery  | 3  | D | EpicGames        | OwnedAvailable | 4
+LIBRARY | Avery  | 8  | D | Steam            | OwnedAvailable | 5
+LIBRARY | Avery  | 12 | D | Steam            | OwnedAvailable | 4
+LIBRARY | Avery  | 21 | D | Steam            | OwnedAvailable | 5
+
+LIBRARY | Dana   | 5  | P | LivingRoom Shelf | OwnedAvailable | 4
+LIBRARY | Dana   | 14 | P | LivingRoom Shelf | OwnedAvailable | 5
+LIBRARY | Dana   | 19 | D | Steam            | OwnedAvailable | 5
+LIBRARY | Dana   | 24 | P | Bedroom Cabinet  | OwnedLoanedOut | 2
